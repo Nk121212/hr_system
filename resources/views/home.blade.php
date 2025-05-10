@@ -1,4 +1,8 @@
 @extends('app') @section('title', 'Home') @section('content')
+
+<link rel="stylesheet" href="{{ asset('css/apexcharts.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/jsvectormap.min.css') }}" />
+
 <main class="app-main">
     <!--begin::App Content Header-->
     <div class="app-content-header">
@@ -595,6 +599,11 @@
     </div>
     <!--end::App Content-->
 </main>
+
+<script src="{{ asset('js/apexcharts.min.js') }}"></script>
+<script src="{{ asset('js/jsvectormap.min.js') }}"></script>
+<script src="{{ asset('js/world.js') }}"></script>
+
 <script>
     const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
     const Default = {

@@ -13,11 +13,7 @@
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/adminlte.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apextree/dist/apextree.min.js"></script>
     <script src="{{ asset('js/Sortable.min.js') }}"></script>
-    <script src="{{ asset('js/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('js/jsvectormap.min.js') }}"></script>
-    <script src="{{ asset('js/world.js') }}"></script>
     
   </body>
 </html>

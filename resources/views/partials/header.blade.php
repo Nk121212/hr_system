@@ -20,10 +20,10 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
         />
         <link rel="stylesheet" href="{{ asset('css/adminlte.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/apexcharts.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/jsvectormap.min.css') }}" />
+        
+        
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apextreejs@1.6.3/dist/css/apextree.min.css">
+        
     </head>
     <!--end::Head-->
     <!--begin::Body-->
@@ -371,7 +371,7 @@
                             data-accordion="false"
                         >
                             <li class="nav-item">
-                                <a href="{{ route('home') }}" class="nav-link active">
+                                <a href="{{ route('home') }}" class="home nav-link">
                                     <i class="nav-icon bi bi-laptop"></i>
                                     <p>Desktop</p>
                                 </a>
@@ -379,7 +379,7 @@
                             <li class="nav-item">
                                 <a
                                     href="{{ route('struktur_organisasi') }}"
-                                    class="nav-link"
+                                    class="struktur_organisasi nav-link"
                                 >
                                     <i class="nav-icon bi bi-diagram-3"></i>
                                     <p>Struktur Organisasi</p>
@@ -483,3 +483,29 @@
                 </div>
                 <!--end::Sidebar Wrapper-->
             </aside>
+            <script>
+              let targetClassName = "{{ Route::currentRouteName() }}";
+              let newClassName = "active";
+              let removeClassName = "active";
+
+              // Dapatkan semua elemen <a> dengan class targetClassName
+              const targetLinks = document.querySelectorAll(`a.${targetClassName}`);
+
+              // Dapatkan semua elemen <a> lainnya (opsional, tergantung logika Anda)
+              const allLinks = document.querySelectorAll('a');
+
+              // Tambahkan class baru ke semua elemen <a> yang memiliki targetClassName
+              targetLinks.forEach(link => {
+                link.classList.add(newClassName);
+              });
+
+              // Hapus class tertentu dari elemen <a> lainnya
+              if (removeClassName) {
+                allLinks.forEach(link => {
+                  if (!link.classList.contains(targetClassName)) { // Jangan hapus dari target
+                    link.classList.remove(removeClassName);
+                  }
+                });
+              }
+
+            </script>
