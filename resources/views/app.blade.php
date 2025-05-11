@@ -1,12 +1,17 @@
 @include('partials.header')
-
-<div class="container">
-    <main class="app-main">
-    <!--begin::App Content Header-->
-    <div class="app-content-header">
-        <!--begin::Container-->
-        <div class="container-fluid">
-    @yield('content')
-</div>
-
-@include('partials.footer')
+    <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+        <div class="app-wrapper">
+            @include('partials.topbar')
+            @include('partials.sidebar')
+                <main class="app-main mt-2">
+                    <div class="app-content">
+                        <div class="container-fluid">
+                            @yield('content')
+                        </div>
+                    </div>
+                </main>
+            @include('partials.footer')
+        </div>
+        @include('partials.onload_script')
+    </body>
+</html>

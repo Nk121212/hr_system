@@ -1,19 +1,14 @@
-      <footer class="app-footer">
-        <div class="float-end d-none d-sm-inline">Anything you want</div>
-        <strong>
-          Copyright &copy; 2014-2024&nbsp;
-          <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
-        </strong>
-        All rights reserved.
-      </footer>
-    </div>
-
-    <script src="{{ asset('js/jquery-3.7.1.js') }}"></script>
-    <script src="{{ asset('js/overlayscrollbars.browser.es6.min.js') }}"></script>
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/adminlte.js') }}"></script>
-    <script src="{{ asset('js/Sortable.min.js') }}"></script>
-    
-  </body>
-</html>
+<footer class="app-footer">
+    <!--begin::To the end-->
+    <div class="float-end d-none d-sm-inline">Anything you want</div>
+    <!--end::To the end-->
+    <!--begin::Copyright-->
+    <strong>
+        Copyright &copy; 2014-2024&nbsp;
+        <a href="https://adminlte.io" class="text-decoration-none"
+            >AdminLTE.io</a
+        >.
+    </strong>
+    All rights reserved.
+    <!--end::Copyright-->
+</footer>
