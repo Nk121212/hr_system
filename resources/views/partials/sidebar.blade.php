@@ -5,7 +5,7 @@
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
             <img
-                src="../../dist/assets/img/AdminLTELogo.png"
+                src="{{ asset('assets/img/AdminLTELogo.png') }}"
                 alt="AdminLTE Logo"
                 class="brand-image opacity-75 shadow"
             />
@@ -27,73 +27,109 @@
                 data-accordion="false"
             >
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-laptop"></i>
                         <p>Desktop</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('struktur_organisasi') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'struktur_organisasi' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-diagram-3"></i>
                         <p>Struktur Organisasi</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-person"></i>
                         <p>Data Karyawan</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-fingerprint"></i>
                         <p>Absensi & Kehadiran</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-cash-coin"></i>
                         <p>Payroll & Penggajian</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-credit-card"></i>
                         <p>BPJS & Pajak</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-file-earmark-text"></i>
                         <p>Dokumen HR & Surat</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-star"></i>
                         <p>Penilaian Karyawan</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-bullseye"></i>
                         <p>KPI & Target</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-play-btn"></i>
                         <p>Program Pelatihan</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-gear"></i>
                         <p>Self Service</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./generate/theme.html" class="nav-link">
+                    <a
+                        href="{{ route('home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                    >
                         <i class="nav-icon bi bi-key"></i>
                         <p>Manajemen Akses</p>
                     </a>

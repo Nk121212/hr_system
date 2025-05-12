@@ -170,7 +170,7 @@
                         <!-- /.direct-chat-infos -->
                         <img
                             class="direct-chat-img"
-                            src="../../dist/assets/img/user1-128x128.jpg"
+                            src="{{ asset('assets/img/user1-128x128.jpg') }}"
                             alt="message user"
                         />
                         <!-- /.direct-chat-img -->
@@ -194,7 +194,7 @@
                         <!-- /.direct-chat-infos -->
                         <img
                             class="direct-chat-img"
-                            src="../../dist/assets/img/user3-128x128.jpg"
+                            src="{{ asset('assets/img/user3-128x128.jpg') }}"
                             alt="message user"
                         />
                         <!-- /.direct-chat-img -->
@@ -217,7 +217,7 @@
                         <!-- /.direct-chat-infos -->
                         <img
                             class="direct-chat-img"
-                            src="../../dist/assets/img/user1-128x128.jpg"
+                            src="{{ asset('assets/img/user1-128x128.jpg') }}"
                             alt="message user"
                         />
                         <!-- /.direct-chat-img -->
@@ -241,7 +241,7 @@
                         <!-- /.direct-chat-infos -->
                         <img
                             class="direct-chat-img"
-                            src="../../dist/assets/img/user3-128x128.jpg"
+                            src="{{ asset('assets/img/user3-128x128.jpg') }}"
                             alt="message user"
                         />
                         <!-- /.direct-chat-img -->
@@ -258,7 +258,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user1-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user1-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -282,7 +284,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user7-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user7-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -306,7 +310,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user3-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user3-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -330,7 +336,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user5-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user5-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -354,7 +362,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user6-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user6-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">
@@ -378,7 +388,9 @@
                             <a href="#">
                                 <img
                                     class="contacts-list-img"
-                                    src="../../dist/assets/img/user8-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user8-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                 />
                                 <div class="contacts-list-info">

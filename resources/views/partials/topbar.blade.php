@@ -12,10 +12,11 @@
                 </button>
             </li>
             <li class="nav-item d-none d-md-block">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item d-none d-md-block">
-                <a href="#" class="nav-link">Contact</a>
+                <a
+                    href="#"
+                    class="nav-link"
+                    >{{ Str::contains(Route::currentRouteName(), '_') ? collect(explode('_', Route::currentRouteName()))->map(function ($item) { return ucfirst($item); })->implode(' ') : ucfirst(Route::currentRouteName()) }}</a
+                >
             </li>
         </ul>
 
@@ -31,7 +32,9 @@
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
-                                    src="../../dist/assets/img/user1-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user1-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                     class="img-size-50 rounded-circle me-3"
                                 />
@@ -58,7 +61,9 @@
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
-                                    src="../../dist/assets/img/user8-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user8-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                     class="img-size-50 rounded-circle me-3"
                                 />
@@ -85,7 +90,9 @@
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <img
-                                    src="../../dist/assets/img/user3-128x128.jpg"
+                                    src="{{
+                                        asset('assets/img/user3-128x128.jpg')
+                                    }}"
                                     alt="User Avatar"
                                     class="img-size-50 rounded-circle me-3"
                                 />
@@ -175,7 +182,7 @@
                     data-bs-toggle="dropdown"
                 >
                     <img
-                        src="../../dist/assets/img/user2-160x160.jpg"
+                        src="{{ asset('assets/img/user2-160x160.jpg') }}"
                         class="user-image rounded-circle shadow"
                         alt="User"
                     />
@@ -185,7 +192,7 @@
                     <!--begin::User Image-->
                     <li class="user-header text-bg-primary">
                         <img
-                            src="../../dist/assets/img/user2-160x160.jpg"
+                            src="{{ asset('assets/img/user2-160x160.jpg') }}"
                             class="rounded-circle shadow"
                             alt="User"
                         />
