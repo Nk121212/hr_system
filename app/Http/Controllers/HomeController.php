@@ -17,4 +17,9 @@ class HomeController extends Controller
     {
         return view('struktur_organisasi');
     }
+
+    public function dataKaryawan(): View
+    {
+        return view('data_karyawan');
+    }
 }

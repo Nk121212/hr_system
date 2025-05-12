@@ -1,4 +1,4 @@
-@extends('app') @section('title', 'Home') @section('content')
+@extends('app') @section('title', 'Struktur Organisasi') @section('content')
 <script src="https://cdn.jsdelivr.net/npm/apextree@latest/apextree.min.js"></script>
 <main class="app-main">
     <div class="app-content">
@@ -17,60 +17,65 @@
 
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 1-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building"></i>
-                        <p class="my-p-fs-sm p-2">Departemen/Divisi</p>
+                        <p>Departemen/Divisi</p>
                     </div>
                     <!--end::Small Box Widget 1-->
                 </div>
                 <!--end::Col-->
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 2-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building-add"></i>
-                        <p class="my-p-fs-sm p-2">Subdepartemen/Unit</p>
+                        <p>Subdepartemen/Unit</p>
                     </div>
                     <!--end::Small Box Widget 2-->
                 </div>
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 2-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building-check"></i>
-                        <p class="my-p-fs-sm p-2">Jabatan/Posisi</p>
+                        <p>Jabatan/Posisi</p>
                     </div>
                     <!--end::Small Box Widget 2-->
                 </div>
                 <!--end::Col-->
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 2-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building-dash"></i>
-                        <p class="my-p-fs-sm p-2">Level Jabatan</p>
+                        <p>Level Jabatan</p>
                     </div>
                     <!--end::Small Box Widget 2-->
                 </div>
                 <!--end::Col-->
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 4-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building-down"></i>
-                        <p class="my-p-fs-sm p-2">Lokasi Kerja</p>
+                        <p>Lokasi Kerja</p>
                     </div>
                     <!--end::Small Box Widget 4-->
                 </div>
                 <div class="col-lg-3 col-6">
                     <!--begin::Small Box Widget 4-->
-                    <div class="small-box text-bg-primary text-center">
+                    <div class="small-box text-bg-primary text-center p-1">
                         <i class="nav-icon bi bi-building-exclamation"></i>
-                        <p class="my-p-fs-sm p-2">Bagian Struktur</p>
+                        <p>Bagian Struktur</p>
                     </div>
                     <!--end::Small Box Widget 4-->
                 </div>
                 <!--end::Col-->
             </div>
+
             <div class="col-lg-12 col-12"><hr class="border-primary" /></div>
             <!--end::Row-->
-            <div id="tree" style="display: flex; justify-content: center"></div>
+            <div
+                class="col-lg-12 col-12"
+                id="tree"
+                style="display: flex; justify-content: center"
+            ></div>
             <div id="error-message" style="color: red"></div>
         </div>
     </div>
@@ -162,8 +167,8 @@
     };
     const options = {
         contentKey: "data",
-        width: 800,
-        height: 600,
+        // width: 800,
+        // height: 600,
         nodeWidth: 150,
         nodeHeight: 100,
         fontColor: "#fff",

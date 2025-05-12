@@ -5,13 +5,13 @@
         <a href="./index.html" class="brand-link">
             <!--begin::Brand Image-->
             <img
-                src="{{ asset('assets/img/AdminLTELogo.png') }}"
+                src="{{ asset('assets/img/myicon.png') }}"
                 alt="AdminLTE Logo"
                 class="brand-image opacity-75 shadow"
             />
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">AdminLTE 4</span>
+            <span class="brand-text fw-light">HR SYSTEM</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
@@ -46,8 +46,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('data_karyawan') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'data_karyawan' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-person"></i>
                         <p>Data Karyawan</p>
