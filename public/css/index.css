@@ -68,9 +68,83 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
+/* custom here */
 p.my-p-fs-sm{
   font-size: small !important;
 }
 p.my-p-fs-lg{
   font-size: large !important;
+}
+
+#apexTreeWrapper {
+    position: relative;
+    width: 100%; /* Membuat wrapper mengisi lebar container parent */
+    overflow: auto; /* Mengaktifkan scroll jika konten melebihi lebar */
+    min-height: 300px; /* Berikan tinggi minimum agar terlihat meskipun konten kecil */
+}
+
+#apexTreeWrapper > svg {
+    display: block; /* Mencegah spasi ekstra di bawah SVG */
+    width: 100%; /* Membuat SVG responsif terhadap lebar wrapper */
+    height: auto; /* Mempertahankan aspek rasio SVG */
+}
+
+#toolbar {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 10px; /* Sesuaikan jarak dari atas */
+    right: 10px; /* Sesuaikan jarak dari kanan */
+    z-index: 10; /* Pastikan toolbar berada di atas SVG */
+    /* background-color: rgba(255, 255, 255, 0.8); Latar belakang semi-transparan */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#toolbar > div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BCBCBC;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#toolbar > div > img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Media query untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    #toolbar {
+        top: auto;
+        bottom: 10px; /* Pindahkan toolbar ke bawah pada layar kecil */
+        left: 50%;
+        transform: translateX(-50%); /* Tengah horizontal */
+        right: auto;
+        width: auto;
+    }
+
+    #toolbar > div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Media query untuk layar yang sangat kecil */
+@media (max-width: 480px) {
+    #toolbar {
+        gap: 3px;
+        padding: 3px;
+    }
+
+    #toolbar > div {
+        width: 35px;
+        height: 35px;
+    }
 }

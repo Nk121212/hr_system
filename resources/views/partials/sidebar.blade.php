@@ -28,8 +28,8 @@
             >
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-laptop"></i>
                         <p>Desktop</p>
@@ -37,8 +37,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('struktur_organisasi') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'struktur_organisasi' ? 'active' : '' }}"
+                        href="{{ route('page_organisasi') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_organisasi' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-diagram-3"></i>
                         <p>Struktur Organisasi</p>
@@ -46,8 +46,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('data_karyawan') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'data_karyawan' ? 'active' : '' }}"
+                        href="{{ route('page_karyawan') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_karyawan' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-person"></i>
                         <p>Data Karyawan</p>
@@ -55,8 +55,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_absensi') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_absensi' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-fingerprint"></i>
                         <p>Absensi & Kehadiran</p>
@@ -64,8 +64,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_payroll') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_payroll' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-cash-coin"></i>
                         <p>Payroll & Penggajian</p>
@@ -73,8 +73,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_bpjs') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_bpjs' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-credit-card"></i>
                         <p>BPJS & Pajak</p>
@@ -82,8 +82,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_hrd') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_hrd' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-file-earmark-text"></i>
                         <p>Dokumen HR & Surat</p>
@@ -91,8 +91,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-star"></i>
                         <p>Penilaian Karyawan</p>
@@ -100,8 +100,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-bullseye"></i>
                         <p>KPI & Target</p>
@@ -109,8 +109,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-play-btn"></i>
                         <p>Program Pelatihan</p>
@@ -118,8 +118,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-gear"></i>
                         <p>Self Service</p>
@@ -127,8 +127,8 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="{{ route('home') }}"
-                        class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('page_home') }}"
+                        class="nav-link {{ Route::currentRouteName() == 'page_home' ? 'active' : '' }}"
                     >
                         <i class="nav-icon bi bi-key"></i>
                         <p>Manajemen Akses</p>

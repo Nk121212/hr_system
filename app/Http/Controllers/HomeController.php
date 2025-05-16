@@ -8,18 +8,38 @@ use Illuminate\View\View;
 class HomeController extends Controller
 {
 
-    public function home(): View
+    public function pageHome(): View
     {
-        return view('home');
+        return view('v_home');
     }
 
-    public function strukturOrganisasi(): View
+    public function pageOrganisasi(): View
     {
-        return view('struktur_organisasi');
+        return view('v_organisasi');
     }
 
-    public function dataKaryawan(): View
+    public function pageKaryawan(): View
     {
-        return view('data_karyawan');
+        return view('v_karyawan');
+    }
+
+    public function pageAbsensi(): View
+    {
+        return view('v_absensi');
+    }
+
+    public function pagePayroll(): View
+    {
+        return view('v_payroll');
+    }
+
+    public function pageBpjs(): View
+    {
+        return view('v_bpjs');
+    }
+
+    public function pageHrd(): View
+    {
+        return view('v_hrd');
     }
 }
